@@ -1,16 +1,17 @@
-<html>
-
+<html lang="en">
 <head>
-    <title>Express</title>
+    <title>OpenAI API</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
     <link type="text/css" href="/stylesheets/pico.min.css" rel="stylesheet">
-<body>                  
-<h1>Express</h1>
-<textarea name="" id="ask" cols="30" rows="10"></textarea><br>
-<select id="size">
-    <option value="1024x1024">1024x1024</option>
-    <option value="1972x1024">1972x1024</option>
-    <option value="1024x1972">1024x1972</option>
+    <link type="text/css" href="/stylesheets/style.css" rel="stylesheet">
+<body>
+<h1>Generate Image</h1>
+<label for="ask">Prompt</label><textarea id="ask"placeholder="Input your prompt, 4000 characters."></textarea><br>
+<label for="size">Image size</label><select id="size">
+    <option value="256x256">256x256</option>
+    <option value="1024x1024" selected>1024x1024</option>
+    <option value="1792x1024">1792x1024</option>
+    <option value="1024x1792">1024x1792</option>
 </select><br>
 <button id="btn">Generate</button>
 <hr>
