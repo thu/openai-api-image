@@ -8,9 +8,8 @@ const openai = new OpenAI({
 })
 
 router.post('/', (req, res) => {
-    gen(req, res);
+    console.log(gen(req, res));
 });
-
 
 async function gen(req, res) {
     const {prompt, size} = req.body;
@@ -23,13 +22,14 @@ async function gen(req, res) {
         quality: 'hd',
         style: 'natural'
     });
+    let revisedPrompt = response.data[0].revised_prompt;
     let url = response.data[0].url;
     console.log(response.data);
     res.status(200).json({
         success: true,
-        data: url
+        revisedPrompt: revisedPrompt,
+        url: url
     })
 }
-
 
 module.exports = router;
