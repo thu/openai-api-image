@@ -1,3 +1,7 @@
 # OpenAI API Image Generation
 
-> https://platform.openai.com/docs/api-reference/images/create?lang=node.js
+WeChat
+`THU_Li`
+
+Bilibili 视频
+> [https://www.bilibili.com/video/BV16e411m7d5/](https://www.bilibili.com/video/BV16e411m7d5/)
